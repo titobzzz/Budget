@@ -15,7 +15,7 @@ export default function Budget(){
             <section>Monthly budget</section>
           </div>
           <div className="balance_container">
-          <TbCurrencyNaira color="black" fontSize="2em"/>
+          <TbCurrencyNaira color="#0466C8" fontSize="2em"/>
            <h2> 120,000</h2>
           </div>
           <div className="months">
