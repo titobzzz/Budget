@@ -1,0 +1,262 @@
+@font-face {
+  font-family: 'circular';
+  src: url('/CircularStd-Book.otf')format("opentype");
+}
+#root{
+    margin: 0 ;
+    padding:0;
+    text-align:justify;
+}
+:root {
+  font-family: 'circular', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+ 
+}
+
+.app{
+  background-color:#FCFCFC;
+  height:100%;
+  /* width:100vw; */
+  display:flex
+}
+
+  .budget_container{
+    font-family: 'circular';
+      padding:10px 20px;
+      display:flex;
+      flex-direction:column;
+      background:#FCFCFC;
+      gap:5px;
+    
+  }
+  .naira_constainer{
+    margin-top:7px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .naira{
+      border-radius:100%;
+      width:22px;
+      height:22px;
+      background:rgb( 4, 102, 200, .2);
+      display:flex;
+      justify-content:center;
+      align-items:center;
+  }
+  section{
+    font-size:14px;
+    font-weight: bold;
+    color:#707480;
+  }
+  .balance_container{
+    background:white;
+    height:51px;
+    padding:0px 6px;
+    border-radius:10px;;
+    display:flex;
+    align-items:center;
+    font-weigth:bold;
+    box-shadow: 1px 3px rgb(220, 220, 220,.3);
+  }
+  .months{
+    display:flex;
+    gap:1em;
+    margin-top:20px;
+    font-size:16px;
+  }
+  .grey{
+    font-size:15px;
+    color:grey;
+    font-weight: bold;
+  }
+  .blue{
+    gap:-5px;
+    color:#0466C8;
+    font-weight: bold;
+     
+  }
+  .blue::after { 
+    content: ""; 
+    display: block; 
+    border-bottom: 1px solid #0466C8;
+    margin: 5px 0 0 0; 
+    margin-right:47px;
+    border-width:2px;
+  }
+  .options{
+    display:flex;
+    margin-left:auto
+  }
+  .progressbar{
+     display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:30px 0px 0px 0px; 
+   
+  }
+  .progress-container{
+     border:10px solid rgb( 4, 102, 200, .4); 
+     border-radius:100%;
+     width:100px;
+    height:100px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  .progress{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:31px;    
+  }
+.pro-value{
+  position:absolute;
+  top:-60px;
+  left:25px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:#0466C8;
+}
+p{
+  font-size:14px;
+  weigth:200;
+  color:#707480;
+  text-align:center;
+  padding:5px;
+}
+h2{
+  color:#001233
+}
+.amontspent{
+  display:flex;
+  justify-content:center;
+  font-size:14px;
+  color:#0466C8;
+  font-weight:bold;
+  font-size:16px;
+}
+.categories{
+  display:flex;
+  flex-direction:column;
+  gap:2em;
+margin:35px 0px 20px 0px;
+}
+.h4{
+  font-size:21px;  
+  font-weight:bold;
+  color:#001233
+}
+.card{
+  display:flex;
+  height:20px;
+  width:90vw;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:2px;
+  margin:0;
+  padding:0px;
+  flex-column:1 2 3
+}
+.progress_back{
+  position:relative;
+  background:rgb(200,145,4,.2);
+  height:40px;
+  width:40px;
+  border-radius:100%;
+  box-sizing:border-box;
+  margin:0px;
+}
+.progress_back2{
+  position:relative;
+  background: rgb(144, 238,144,.4); 
+  height:40px;
+  width:40px;
+  border-radius:100%;
+  box-sizing:border-box;
+  margin:0px;
+}
+.card-icon{
+  position:absolute;
+top:12px;
+left:10px;
+}
+.amontspent2{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:10px;
+  font-weight:bold;
+  font-size:14px;
+}
+.expence{
+  font-size:12px;
+  margin-right:auto;
+  margin-left:10px;
+}
+h6{
+  color:#001233
+}
+
+.navbar{
+  display:flex;
+  flex-direction:column;
+  width:4em;
+ margin-right:auto;
+ position:fixed;
+  height:70vh;
+ justify-content:space-between;
+ align-items:center;
+  border-radius:10px 0px 0px 10px; 
+  background:white; 
+  box-shadow:0p2 0px 4px 3px rgb(220, 220, 220,.5);
+  gap:2em;
+  padding:70px 10px; 
+}
+.text{
+  color:grey;
+  font-size:.8em;
+}
+.text2{
+  color:#001233;
+  font-size:.8em;
+  font-weight:bold;
+}
+
+
+@media(max-width:600px){ 
+.app{
+  display:flex;
+  flex-direction:column;
+  padding:0px;
+  postion:relative;
+}
+.budget_container{
+  margin-bottom:40px;
+}
+.navbar{
+  position:fixed;
+  flex-direction:row;
+  bottom:0;
+  left:0;
+  right:0;
+  height:5vh;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  background:white;
+  box-shadow: 4px -3px 4px 3px rgb(220, 220, 220,.2);
+  width:100vw;
+  padding:10px 0px;
+  gap:0.1em; 
+}
+
+.text{
+  font-size:.5em;
+}
+.text2{
+  font-size:.5em;
+}
+}
